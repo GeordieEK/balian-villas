@@ -3,11 +3,17 @@ import VillaDropdown from './villa-dropdown';
 
 const NavBar = () => {
   return (
-    <div>
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
+    <div className="flex justify-center space-x-32">
+      <Link href="/" className="font-medium">
+        Home
+      </Link>
+      <Link href="/about" className="font-medium">
+        About
+      </Link>
       <VillaDropdown />
-      <Link href="/photogallery">Gallery</Link>
+      <Link href="/photogallery" className="font-medium">
+        Gallery
+      </Link>
     </div>
   );
 };

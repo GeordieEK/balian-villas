@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <div>Footer</div>;
+  return <div className="flex justify-center">Footer</div>;
 };
 
 export default Footer;
