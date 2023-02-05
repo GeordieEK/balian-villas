@@ -1,7 +1,15 @@
-import React from 'react';
+import Link from 'next/link';
+import VillaDropdown from './villa-dropdown';
 
 const NavBar = () => {
-  return <div>NavBar</div>;
+  return (
+    <div>
+      <Link href="/">Home</Link>
+      <Link href="/about">About</Link>
+      <VillaDropdown />
+      <Link href="/photogallery">Gallery</Link>
+    </div>
+  );
 };
 
 export default NavBar;
