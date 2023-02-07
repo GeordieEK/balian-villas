@@ -37,7 +37,7 @@ const Carousel = ({
         <img
           src={currentImage.src}
           alt={currentImage.alt}
-          className="max-h-[85vh]"
+          className="max-h-[85vh] duration-500"
         />
         <button
           className="absolute top-0 right-0 p-5 text-white text-l font-bold focus:outline-none hover:text-gray-200 opacity-60"
@@ -45,15 +45,15 @@ const Carousel = ({
         >
           X
         </button>
-        <div className="flex justify-between">
+        <div>
           <button
-            className="top-50% transform translate-y-1/2 text-white text-xl font-bold focus:outline-none"
+            className="absolute top-1/2 text-white text-xl font-medium opacity-70 focus:outline-none"
             onClick={() => handleMove('left')}
           >
             &lt;
           </button>
           <button
-            className="top-50% transform translate-y-1/2 text-white text-xl font-bold focus:outline-none"
+            className="absolute top-1/2 right-2  text-white text-xl font-medium opacity-70 focus:outline-none"
             onClick={() => handleMove('right')}
           >
             &gt;
