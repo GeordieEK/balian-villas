@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-const BlurImage = ({ image }) => {
+const GalleryImage = ({ image }) => {
   const [isLoading, setLoading] = useState(true);
 
   const cn = (...classes) => {
@@ -32,4 +32,4 @@ const BlurImage = ({ image }) => {
   );
 };
 
-export default BlurImage;
+export default GalleryImage;

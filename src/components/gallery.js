@@ -1,4 +1,4 @@
-import BlurImage from './blur-image';
+import GalleryImage from './gallery-image';
 import { useState, useEffect } from 'react';
 import Carousel from './carousel';
 
@@ -81,7 +81,7 @@ const Gallery = () => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {images.map((image, index) => (
             <div key={index} onClick={() => setCurrentImage(image)}>
-              <BlurImage image={image} />
+              <GalleryImage image={image} />
             </div>
           ))}
         </div>
