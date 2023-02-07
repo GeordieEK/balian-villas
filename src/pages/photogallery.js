@@ -1,10 +1,10 @@
 import React from 'react';
-import PhotoGallery from '@/components/gallery';
+import Gallery from '@/components/gallery';
 
-export default function Gallery() {
+export default function PhotoGallery() {
   return (
     <>
-      <PhotoGallery />
+      <Gallery />
     </>
   );
 }
