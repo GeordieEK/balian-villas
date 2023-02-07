@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 const Carousel = ({
   images,
   currentImage,
-  handleClick,
-  handleClose,
   handleMove,
+  handleClose,
   handleKeyDown,
 }) => {
   const addListener = useEffect(() => {
@@ -15,13 +14,23 @@ const Carousel = ({
     };
   });
 
+  // Create ref for background
+  const backgroundRef = useRef(null);
+
+  // Check if background clicked
+  const backgroundClick = (e) => {
+    if (e.target === backgroundRef.current) {
+      handleClose();
+    }
+  };
+
   return (
     <div
       className="fixed inset-0 h-full w-full flex items-center justify-center bg-black bg-opacity-75 "
       onKeyDown={handleKeyDown}
       tabIndex={0}
       ref={backgroundRef}
-      onClick={handleClick}
+      onClick={backgroundClick}
     >
       <div className="relative z-50 p-2 rounded-lg max-w-3xl overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
