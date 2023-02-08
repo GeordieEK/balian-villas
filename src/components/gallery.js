@@ -1,54 +1,7 @@
 import GalleryImage from './gallery-image';
 import { useState, useEffect } from 'react';
 import Carousel from './carousel';
-
-const images = [
-  {
-    src: '/image1.jpg',
-    width: 400,
-    height: 300,
-  },
-  {
-    src: '/image5.webp',
-    width: 400,
-    height: 300,
-  },
-  {
-    src: '/image2.jpg',
-    width: 500,
-    height: 100,
-  },
-  {
-    src: '/image6.webp',
-    width: 1000,
-    height: 1000,
-  },
-  {
-    src: '/image3.webp',
-    width: 400,
-    height: 300,
-  },
-  {
-    src: '/image7.webp',
-    width: 400,
-    height: 300,
-  },
-  {
-    src: '/image4.webp',
-    width: 500,
-    height: 500,
-  },
-  {
-    src: '/image9.webp',
-    width: 400,
-    height: 300,
-  },
-  {
-    src: '/image8.webp',
-    width: 2000,
-    height: 2000,
-  },
-];
+import images from '../images/images.json';
 
 const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(null);

@@ -1,12 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 
-const Carousel = ({
-  images,
-  currentImage,
-  handleMove,
-  handleClose,
-  handleKeyDown,
-}) => {
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+
+const Carousel = ({ currentImage, handleMove, handleClose, handleKeyDown }) => {
   const addListener = useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
     return () => {
@@ -32,31 +28,36 @@ const Carousel = ({
       ref={backgroundRef}
       onClick={backgroundClick}
     >
-      <div className="relative z-50 p-2 rounded-lg max-w-3xl overflow-hidden">
+      <div className="relative rounded-2xl max-w-3xl overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={currentImage.src}
           alt={currentImage.alt}
-          className="max-h-[85vh] duration-500"
+          className="max-h-[85vh] transition-opacity duration-500 ease-in-out"
         />
+        {/* <div
+          style={{ backgroundImage: 'url(' + currentImage.src + ')' }}
+          aria-label={currentImage.alt}
+          className="absolute inset-0 h-full w-full bg-center bg-cover rounded-2xl duration-500"
+        ></div> */}
         <button
-          className="absolute top-0 right-0 p-5 text-white text-l font-bold focus:outline-none hover:text-gray-200 opacity-60"
+          className="absolute top-1 right-3 text-white  focus:outline-none hover:text-gray-200 opacity-60"
           onClick={handleClose}
         >
           X
         </button>
         <div>
-          <button
-            className="absolute top-1/2 text-white text-xl font-medium opacity-70 focus:outline-none"
-            onClick={() => handleMove('left')}
-          >
-            &lt;
+          <button className="absolute top-1/2 text-white opacity-70 focus:outline-none">
+            <BsChevronCompactLeft
+              size={25}
+              onClick={() => handleMove('left')}
+            />
           </button>
-          <button
-            className="absolute top-1/2 right-2  text-white text-xl font-medium opacity-70 focus:outline-none"
-            onClick={() => handleMove('right')}
-          >
-            &gt;
+          <button className="absolute top-1/2 right-0  text-white opacity-70 focus:outline-none">
+            <BsChevronCompactRight
+              size={25}
+              onClick={() => handleMove('right')}
+            />
           </button>
         </div>
       </div>
