@@ -13,7 +13,7 @@ const AutoSlider = () => {
     <div className="flex justify-center h-[90vh]">
       <div
         style={{ backgroundImage: `url(${images[currentIndex].src})` }}
-        className="w-full h-full bg-center bg-cover duration-1000"
+        className="w-full h-full bg-center bg-cover duration-[2000ms]"
       ></div>
     </div>
   );
