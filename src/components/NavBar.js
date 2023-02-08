@@ -3,7 +3,7 @@ import VillaDropdown from './villa-dropdown';
 
 const NavBar = () => {
   return (
-    <div className="flex justify-center space-x-32">
+    <div className="flex justify-center space-x-[10vw]">
       <Link href="/" className="font-medium">
         Home
       </Link>
