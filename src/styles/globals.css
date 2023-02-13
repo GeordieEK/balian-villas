@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom text stroke class */
+.text-stroke {
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+}
+
+/* Draw-in animation */
+draw-animation {
+  animation: draw-in 1s forwards;
+}
+
+@keyframes draw-in {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

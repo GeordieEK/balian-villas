@@ -8,6 +8,9 @@ export default function Home() {
       <main>
         <div>
           <AutoSlider />
+          <h1 className="text-white text-8xl font-bold tracking-wide text-center absolute top-1/3 left-0 right-0 text-stroke draw-animation">
+            THE VILLAS <br /> BALIAN BEACH
+          </h1>
         </div>
       </main>
     </>

@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
-
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import { CgClose } from 'react-icons/cg';
 
 const Carousel = ({ currentImage, handleMove, handleClose, handleKeyDown }) => {
   const addListener = useEffect(() => {
@@ -41,10 +41,10 @@ const Carousel = ({ currentImage, handleMove, handleClose, handleKeyDown }) => {
           className="absolute inset-0 h-full w-full bg-center bg-cover rounded-2xl duration-500"
         ></div> */}
         <button
-          className="absolute top-1 right-3 text-white  focus:outline-none hover:text-gray-200 opacity-60"
+          className="absolute top-2 right-2 text-white  focus:outline-none hover:text-gray-200 opacity-60"
           onClick={handleClose}
         >
-          X
+          <CgClose size={20} />
         </button>
         <div>
           <button className="absolute top-1/2 text-white opacity-70 focus:outline-none">
