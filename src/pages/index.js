@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Inter } from '@next/font/google';
-import Carousel from '@/components/carousel';
-import AutoSlider from '@/components/auto-slider';
-import Image from 'next/image';
+import Carousel from '../components/carousel';
+import AutoSlider from '../components/auto-slider';
 
 export default function Home() {
   return (
