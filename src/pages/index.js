@@ -8,13 +8,15 @@ export default function Home() {
   return (
     <>
       <main>
-        <div>
-          <AutoSlider />
-          <h1 className="text-white text-8xl font-bold tracking-wide text-center absolute top-1/3 left-0 right-0 text-stroke draw-animation">
-            THE VILLAS <br /> BALIAN BEACH
-          </h1>
+        <div className="relative h-screen pointer-events-none border border-green overflow-auto">
+          <div className="absolute top-0 left-0 right-0 bottom-0 z-[-1]">
+            <AutoSlider />
+            <h1 className="text-white text-8xl font-bold tracking-wide text-center absolute top-1/3 left-0 right-0 text-stroke draw-animation">
+              THE VILLAS <br /> BALIAN BEACH
+            </h1>
+          </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-full">
           <div className="w-1/2 h-auto p-16 flex justify-center">
             {/* TODO: Add Alts */}
             <img src={'/image4.webp'} alt="" loading="lazy" />

@@ -6,11 +6,12 @@ const VillaDropdown = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <div className="font-medium">
-      <div
-        className="w-full flex items-center justify-content"
-        onClick={() => setDropdownOpen(!dropdownOpen)}
-      >
+    <div
+      className="font-medium"
+      onMouseEnter={() => setDropdownOpen(true)}
+      onMouseLeave={() => setDropdownOpen(false)}
+    >
+      <div className="w-full flex items-center justify-content cursor-pointer">
         The Villas{' '}
         <BiChevronDown
           size={15}
@@ -18,7 +19,7 @@ const VillaDropdown = () => {
         />
       </div>
       {dropdownOpen && (
-        <ul className="absolute mt-2">
+        <ul className="absolute mt-0">
           <li
             className="p-1 text-sm hover:bg-sky-600"
             onClick={() => setDropdownOpen(false)}
