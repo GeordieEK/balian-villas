@@ -7,7 +7,17 @@
   --secondary: theme(colors.stone.700);
 }
 
+@font-face {
+  font-family: 'Calendas';
+  src: local('Calendas'), url(../fonts/Calendas/Calendas.otf) format('opentype');
+  font-weight: normal;
+}
+
 @layer base {
+  body {
+    font-family: 'Calendas', ui-serif, Georgia, Cambria, 'Times New Roman',
+      Times, serif;
+  }
   /* Firefox */
   * {
     scrollbar-width: thin;
@@ -33,7 +43,7 @@
 /* TODO: FIX SVG DRAW IN */
 /* Custom text stroke class */
 .text-stroke {
-  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: white;
   color: rgba(0, 0, 0, 0.1);
 }

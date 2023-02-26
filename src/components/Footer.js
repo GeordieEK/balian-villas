@@ -4,7 +4,7 @@ const Footer = () => {
       {' '}
       <i>
         <p>The Villas - Balian Beach.</p>
-        <p>All rights reserved. &copy; </p>
+        <p>&copy; {new Date().getFullYear()} All rights reserved. </p>
       </i>
     </div>
   );

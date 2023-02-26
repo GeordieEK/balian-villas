@@ -11,7 +11,7 @@ export default function About() {
         alt="A clifftop pool overlooking the beach, lit by a sunset"
         className="w-1/2 h-auto p-8 flex justify-center"
       />
-      <div className="w-1/2 mx-8 px-4 mt-8 ">
+      <div className="w-1/2 mx-8 px-4 mt-8">
         <h1 className="mt-0 text-3xl pt-4">Our Story</h1>
         <p className="pt-4">
           We are a team of passionate individuals who are committed to providing

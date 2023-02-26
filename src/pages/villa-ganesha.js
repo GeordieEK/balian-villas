@@ -2,6 +2,7 @@
 import GalleryImage from '@/components/gallery-image';
 import images from '../images/images.json';
 import React from 'react';
+import FeatureListItem from '@/components/feature-list-item';
 
 export default function VillaGanesha() {
   const ganeshaImages = [images[1], images[2], images[3], images[4]];
@@ -27,64 +28,31 @@ export default function VillaGanesha() {
         <div className="text-center col-span-4">
           <h2 className="text-2xl mb-2">Layout</h2>
           <ul>
-            <li className="hover:font-medium">
-              <i>2 Queen Bedrooms</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>2 Ensuite Bathrooms</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>Full Kitchen</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>Living Room</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>Large Dining Area</i>
-            </li>
+            <FeatureListItem text="2 Queen Bedrooms" />
+            <FeatureListItem text="2 Ensuite Bathrooms" />
+            <FeatureListItem text="Full Kitchen" />
+            <FeatureListItem text="Living Room" />
+            <FeatureListItem text="Large Dining Area" />
           </ul>
         </div>
         <div className="text-center col-span-4">
           <h2 className="text-2xl mb-2">Property Features</h2>
           <ul>
-            <li className="hover:font-medium">
-              <i>Large tropical garden</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>Beachfront</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>Clifftop pool</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>Full Kitchen</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>Fast Wifi</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>TV</i>
-            </li>
+            <FeatureListItem text="Large tropical garden" />
+            <FeatureListItem text="Clifftop pool" />
+            <FeatureListItem text="Full Kitchen" />
+            <FeatureListItem text="Fast Wifi" />
+            <FeatureListItem text="TV" />
           </ul>
         </div>
         <div className="text-center col-span-4">
+          <h2 className="text-2xl mb-2">Services Included</h2>
           <ul>
-            <h2 className="text-2xl mb-2">Services Included</h2>
-            <li className="hover:font-medium">
-              <i>Linen & Towels Provided</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>Daily Housekeeping</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>Full Breakfast</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>Staff Available</i>
-            </li>
-            <li className="hover:font-medium">
-              <i>Laundry Service</i>
-            </li>
+            <FeatureListItem text="Linen & Towels Provided" />
+            <FeatureListItem text="Daily Housekeeping" />
+            <FeatureListItem text="Full Breakfast" />
+            <FeatureListItem text="Staff Available" />
+            <FeatureListItem text="Laundry Service" />
           </ul>
         </div>
 

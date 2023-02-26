@@ -7,7 +7,6 @@ const VillaDropdown = () => {
 
   return (
     <div
-      className="font-medium"
       onMouseEnter={() => setDropdownOpen(true)}
       onMouseLeave={() => setDropdownOpen(false)}
     >
@@ -19,20 +18,16 @@ const VillaDropdown = () => {
         />
       </div>
       {dropdownOpen && (
-        <ul className="absolute mt-0">
-          <li
-            className="p-1 text-sm hover:bg-sky-600"
-            onClick={() => setDropdownOpen(false)}
-          >
-            <Link href="/villa-ganesha">Villa Ganesha</Link>
-          </li>
-          <li
-            className="p-1 text-sm hover:bg-sky-600"
-            onClick={() => setDropdownOpen(false)}
-          >
-            <Link href="/villa-nanas">Villa Nanas</Link>
-          </li>
-        </ul>
+        <div className="absolute h-24 w-36 mt-0">
+          <div className="absolute mt-2 xl:w-32 bg-[rgba(0,0,0,0.2)]">
+            <div className="mx-2 py-0 " onClick={() => setDropdownOpen(false)}>
+              <Link href="/villa-ganesha">Villa Ganesha</Link>
+            </div>
+            <div className="mx-2 py-0" onClick={() => setDropdownOpen(false)}>
+              <Link href="/villa-nanas">Villa Nanas</Link>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
