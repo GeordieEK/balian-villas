@@ -4,8 +4,8 @@ import VillaDropdown from './villa-dropdown';
 const NavBar = () => {
   return (
     <div className="relative">
-      <div className="absolute top-2 left-0 w-full">
-        <div className="mx-auto flex justify-center space-x-32 text-stroke-[1]">
+      <div className="absolute mt-0 py-2 left-0 w-full bg-black bg-opacity-20">
+        <div className="mx-auto flex justify-center space-x-32 ">
           <Link href="/" className="font-medium">
             Home
           </Link>

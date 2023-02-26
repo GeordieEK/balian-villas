@@ -1,46 +1,49 @@
 [
     {
       "src": "/image1.jpg",
+      "alt": "deckchairs",
       "width": 400,
       "height": 300
     },
     {
       "src": "/image5.webp",
+      "alt": "",
       "width": 400,
       "height": 300
     },
     {
-      "src": "/image2.jpg",
-      "width": 500,
-      "height": 100
-    },
-    {
       "src": "/image6.webp",
+      "alt": "",
       "width": 1000,
       "height": 1000
     },
     {
       "src": "/image3.webp",
+      "alt": "",
       "width": 400,
       "height": 300
     },
     {
       "src": "/image7.webp",
+      "alt": "",
       "width": 400,
       "height": 300
     },
     {
       "src": "/image4.webp",
+      "alt": "A large clifftop pool overlooking the beach",
       "width": 500,
       "height": 500
     },
     {
       "src": "/image9.webp",
+      "alt": "",
       "width": 400,
       "height": 300
     },
     {
       "src": "/image8.webp",
+      "alt": "",
       "width": 2000,
       "height": 2000
     }
