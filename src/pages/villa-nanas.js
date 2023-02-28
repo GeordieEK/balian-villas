@@ -10,22 +10,22 @@ export default function VillaNanas() {
   return (
     <div className="p-8 pt-10">
       <div className="flex justify-center py-4">
-        <h1 className="text-4xl">Villa Nanas</h1>
+        <h1 className="text-4xl mt-6">Villa Nanas</h1>
         {/* TODO: ADD BOOKING LINK FOR AIRBNB */}
       </div>
       <div class="grid grid-cols-12 gap-4">
         <div className="col-span-12 text-center mx-56">
-          <p className="pb-4">
-            <button className="bg-[var(--secondary)] hover:bg-[var(--hover)] px-2 py-1 rounded-xl">
-              <a href="https://www.airbnb.com.au/rooms/799930133973608175?guests=1&adults=1&s=67&unique_share_id=3d855819-f4b2-45ee-ad2f-52978d408442">
-                BOOK NOW on Airbnb
-              </a>
-            </button>
-          </p>
           <p className="pb-1">
             <i>If one pool isn&#39;t enough...</i>
           </p>
-          <p>Nanas features a tropical plunge pool complete with waterfall.</p>
+          <p className="pb-4">
+            Nanas features a tropical plunge pool complete with waterfall.
+          </p>
+          <button className="bg-[var(--secondary)] hover:bg-[var(--hover)] px-2 py-1 rounded-xl">
+            <a href="https://www.airbnb.com.au/rooms/806114656758713131?guests=1&adults=1&s=67&unique_share_id=4ca8ea92-85bb-42c0-b058-87d6a1cca13b">
+              BOOK NOW on Airbnb
+            </a>
+          </button>
         </div>
         <div className="col-span-12 flex justify-center aspect-w-1 h-[30vw] max-h-96">
           <GalleryImage image={images[0]} hoverText={true} />
