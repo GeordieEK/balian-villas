@@ -5,6 +5,7 @@
 :root {
   --primary: theme(colors.stone.900);
   --secondary: theme(colors.stone.700);
+  --hover: theme(colors.stone.800);
 }
 
 @font-face {
