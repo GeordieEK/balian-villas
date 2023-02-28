@@ -1,5 +1,5 @@
 import GalleryImage from './gallery-image';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Carousel from './carousel';
 import images from '../images/images.json';
 
@@ -42,13 +42,15 @@ const Gallery = () => {
         </div>
       </div>
       {currentImage && (
-        <Carousel
-          images={images}
-          currentImage={currentImage}
-          handleClose={handleClose}
-          handleMove={handleMove}
-          handleKeyDown={handleKeyDown}
-        />
+        <div>
+          <Carousel
+            images={images}
+            currentImage={currentImage}
+            handleClose={handleClose}
+            handleMove={handleMove}
+            handleKeyDown={handleKeyDown}
+          />
+        </div>
       )}
     </>
   );

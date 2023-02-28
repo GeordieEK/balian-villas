@@ -28,12 +28,12 @@ const Carousel = ({ currentImage, handleMove, handleClose, handleKeyDown }) => {
       ref={backgroundRef}
       onClick={backgroundClick}
     >
-      <div className="relative rounded-2xl max-w-3xl overflow-hidden">
+      <div className="relative max-w-3xl">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={currentImage.src}
           alt={currentImage.alt}
-          className="max-h-[85vh] transition-opacity duration-500 ease-in-out"
+          className="max-h-[85vh] transition-opacity rounded-xl duration-500 ease-in-out"
         />
         {/* <div
           style={{ backgroundImage: 'url(' + currentImage.src + ')' }}
@@ -60,6 +60,9 @@ const Carousel = ({ currentImage, handleMove, handleClose, handleKeyDown }) => {
             />
           </button>
         </div>
+        <p className="flex justify-center mt-2 bg-transparent">
+          {currentImage.alt}
+        </p>
       </div>
     </div>
   );
