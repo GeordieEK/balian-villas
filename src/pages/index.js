@@ -36,12 +36,10 @@ export default function Home() {
           <TwoWideImgText
             image="/image5.webp"
             alt=""
-            text="Phasellus quis pretium nulla, et malesuada sem. 
-          Vivamus sit amet orci eu sapien posuere bibendum. Phasellus pulvinar elementum leo eu sodales. 
-          Nullam interdum nisi libero, sit amet pulvinar urna ultricies et. Praesent at felis nec quam molestie ullamcorper vel in nisi. 
-          In vel tempor risus. Ut mattis ex vel consequat interdum. Integer vel elit ligula. 
-          Aliquam vulputate lobortis nibh, at hendrerit ante porta eu. 
-          Sed a ante in neque commodo ultrices. Nullam et consectetur felis."
+            text="The villas reflect traditional Balinese architecture and style 
+            while incorporating all the luxuries and amenities for your comfort and relaxation. 
+            Each villa was designed by a local architect and crafted by local artisans using local materials, 
+            ensuring a truly authentic Balinese experience."
           />
         </AnimationScroll>
       </main>
