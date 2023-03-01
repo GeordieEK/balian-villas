@@ -7,6 +7,7 @@ const Contact = () => {
   const [checkIn, setCheckIn] = useState('');
   const [checkOut, setCheckOut] = useState('');
   const [message, setMessage] = useState('');
+  const [submitted, setSubmitted] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,12 +30,13 @@ const Contact = () => {
       console.log('Response received');
       if (res.status === 200) {
         console.log('Response succeeded!');
-        // setSubmitted(true);
         setName('');
         setEmail('');
         setCheckIn('');
         setCheckOut('');
         setMessage('');
+        setSubmitted(true); // Show message
+        setTimeout(() => setSubmitted(false), 10000); // Hide message after 5 seconds
       }
     });
   };
@@ -133,6 +135,11 @@ const Contact = () => {
           </button>
         </div>
       </form>
+      {submitted && (
+        <div className="text-center mt-8 duration-500 bg-[rgba(0,0,0,0.2) animate-fade-both">
+          Thanks for contacting us, we will be in touch with you soon.
+        </div>
+      )}
     </div>
   );
 };
