@@ -82,7 +82,7 @@ const Contact = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-between md:justify-center">
           <label htmlFor="checkIn">Check In:</label>
           <input
             id="checkIn"
@@ -94,7 +94,7 @@ const Contact = () => {
             onChange={(e) => setCheckIn(e.target.value)}
           />
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-between md:justify-center">
           <label htmlFor="checkOut">Check Out:</label>
           <input
             id="checkOut"

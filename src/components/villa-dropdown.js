@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { BiChevronDown } from 'react-icons/bi';
 
 const VillaDropdown = () => {
+  // TODO: Rebuild this component so that it will become dropdown for children passed into it
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
@@ -10,7 +11,7 @@ const VillaDropdown = () => {
       onMouseEnter={() => setDropdownOpen(true)}
       onMouseLeave={() => setDropdownOpen(false)}
     >
-      <div className="w-full flex items-center justify-content cursor-pointer">
+      <div className="w-full my-2 flex items-center justify-content cursor-pointer hover:font-medium">
         The Villas{' '}
         <BiChevronDown
           size={15}
@@ -19,12 +20,16 @@ const VillaDropdown = () => {
       </div>
       {dropdownOpen && (
         <div className="absolute h-24 w-36 mt-0">
-          <div className="absolute mt-2 xl:w-32 bg-[rgba(0,0,0,0.2)]">
+          <div className="absolute xl:w-32 bg-[rgba(0,0,0,0.2)]">
             <div className="mx-2 py-0 " onClick={() => setDropdownOpen(false)}>
-              <Link href="/villa-ganesha">Villa Ganesha</Link>
+              <Link href="/villa-ganesha" className="hover:font-medium">
+                Villa Ganesha
+              </Link>
             </div>
             <div className="mx-2 py-0" onClick={() => setDropdownOpen(false)}>
-              <Link href="/villa-nanas">Villa Nanas</Link>
+              <Link href="/villa-nanas" className="hover:font-medium">
+                Villa Nanas
+              </Link>
             </div>
           </div>
         </div>
