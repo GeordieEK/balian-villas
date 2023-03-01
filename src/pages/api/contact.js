@@ -27,14 +27,14 @@ export default function contact(req, res) {
       req.body.checkOut +
       'Message: ' +
       req.body.message,
-    html: `<>
+    html: `
         <p>Name: ${req.body.name}</p>
         <p>Email: ${req.body.email}</p>
         <p>
           Dates: ${req.body.checkIn} to ${req.body.checkIn}
         </p>
         <p>${req.body.message}</p>
-      </>`,
+      `,
   };
 
   transporter.sendMail(mailData, function (err, info) {
