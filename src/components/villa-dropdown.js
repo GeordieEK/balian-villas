@@ -20,7 +20,7 @@ const VillaDropdown = () => {
       </div>
       {dropdownOpen && (
         <div className="absolute h-24 w-36 mt-0">
-          <div className="absolute xl:w-32 bg-[rgba(0,0,0,0.2)]">
+          <div className="absolute xl:w-32 bg-[rgba(0,0,0,0.2)] rounded-b-sm">
             <div className="mx-2 py-0 " onClick={() => setDropdownOpen(false)}>
               <Link href="/villa-ganesha" className="hover:font-medium">
                 Villa Ganesha
