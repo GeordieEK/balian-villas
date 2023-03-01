@@ -9,11 +9,14 @@ export default function Layout({ children }) {
         <title>The Villas - Balian Beach</title>
         <meta name="description" content="Balian Beach luxury villas" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* TODO: Fix favicon */}
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <div>
+      <div className="relative min-h-screen">
         <Navbar />
-        <main>{children}</main>
+        <div className="pb-4">
+          <main>{children}</main>
+        </div>
         <Footer />
       </div>
     </>

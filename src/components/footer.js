@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="flex justify-center text-center text-sm mt-2 lg:mt-4">
+    <div className="absolute bottom-0 left-0 right-0 text-center text-sm">
       {' '}
       <i>
         <p>The Villas - Balian Beach.</p>
