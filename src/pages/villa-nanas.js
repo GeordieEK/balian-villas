@@ -14,7 +14,7 @@ export default function VillaNanas() {
         {/* TODO: ADD BOOKING LINK FOR AIRBNB */}
       </div>
       <div class="grid grid-cols-12 gap-4">
-        <div className="col-span-12 text-center mx-56">
+        <div className="col-span-12 text-center">
           <p className="pb-1">
             <i>If one pool isn&#39;t enough...</i>
           </p>
