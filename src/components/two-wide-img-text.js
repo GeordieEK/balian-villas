@@ -9,7 +9,7 @@ const TwoWideImgText = ({ image, alt, text, imageLeft }) => {
       <div className={divClass}>
         <img src={image} alt={alt} loading="lazy" />
       </div>
-      <div className="px-24 text-center flex justify-center items-center">
+      <div className="px-8 md:px-24 text-center flex justify-center items-center">
         {text}
       </div>
     </div>

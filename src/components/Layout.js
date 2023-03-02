@@ -14,7 +14,7 @@ export default function Layout({ children }) {
       </Head>
       <div className="relative min-h-screen">
         <Navbar />
-        <div className="pb-8 lg:pb-4">
+        <div className="pb-16 lg:pb-12">
           <main>{children}</main>
         </div>
         <Footer />

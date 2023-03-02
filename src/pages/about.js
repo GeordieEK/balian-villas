@@ -5,14 +5,14 @@ import GalleryImage from '@/components/gallery-image';
 
 export default function About() {
   return (
-    <div className="flex justify-center pt-12">
+    <div className="flex justify-center pt-12 ">
       <img
         src="/image2.jpg"
         alt="A clifftop pool overlooking the beach, lit by a sunset"
-        className="w-1/2 h-auto p-8 flex justify-center"
+        className="w-1/2 h-auto p-8 hidden lg:flex justify-center"
       />
-      <div className="w-1/2 mx-8 px-4 mt-8">
-        <h1 className="mt-0 text-3xl pt-4">Our Story</h1>
+      <div className="md:w-1/2 mx-8 sm:mx-16 mt-8 border border-green-600">
+        <h1 className="text-3xl pt-4">Our Story</h1>
         <p className="pt-4">
           We are a team of passionate individuals who are committed to providing
           you with a memorable and luxurious stay in Balian Beach.
