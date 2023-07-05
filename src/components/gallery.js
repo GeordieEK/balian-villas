@@ -34,7 +34,7 @@ const Gallery = () => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {images.map((image, index) => (
             <div key={index} onClick={() => setCurrentImage(image)}>
-              <div className="overflow-hidden h-72 w-72 rounded-lg bg-gray-200 border border-green-500">
+              <div className="overflow-hidden h-72 w-72 rounded-lg bg-gray-200 border">
                 <GalleryImage image={image} />
               </div>
             </div>
